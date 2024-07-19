@@ -1,0 +1,18 @@
+{
+    "python.autoComplete.extraPaths": ["__pypackages__/<major.minor>/lib"],
+    "python.analysis.extraPaths": [
+      "__pypackages__/<major.minor>/lib"
+    ],
+    "sqltools.connections": [],
+   "[python]": {
+						// "diffEditor.ignoreTrimWhitespace": false,
+						// "editor.formatOnType": true,
+						// "editor.wordBasedSuggestions": "off",
+						"editor.formatOnSave": true,
+						"editor.defaultFormatter": "charliermarsh.ruff",
+						"editor.codeActionsOnSave": {
+							"source.fixAll": "explicit",
+							"source.organizeImports": "explicit"
+						}
+          },
+}
