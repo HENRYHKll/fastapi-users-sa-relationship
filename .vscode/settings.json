@@ -3,7 +3,7 @@
     "python.analysis.extraPaths": [
       "__pypackages__/<major.minor>/lib"
     ],
-    "sqltools.connections": [],
+    "python.analysis.exclude": ["pyenv"],
    "[python]": {
 						// "diffEditor.ignoreTrimWhitespace": false,
 						// "editor.formatOnType": true,

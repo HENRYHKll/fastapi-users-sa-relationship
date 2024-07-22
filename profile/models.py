@@ -1,7 +1,9 @@
-from sqlalchemy import UUID, ForeignKey
-from sqlalchemy.orm import Mapped, mapped_column, relationship
+from sqlalchemy import Column, ForeignKey, Integer, String, UUID
+from sqlalchemy.orm import relationship, Mapped, mapped_column
 
 from models import Base
+
+
 
 
 class Profile(Base):
@@ -14,4 +16,9 @@ class Profile(Base):
     )
     name: Mapped[str | None]
     photo: Mapped[str | None]
-    users = relationship("User", back_populates="profile")
+    user = relationship(
+        "User",
+        # back_populates="profile",
+        uselist=False,
+        backref="profile",
+    )

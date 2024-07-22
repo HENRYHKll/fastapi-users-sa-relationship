@@ -1,8 +1,8 @@
 """add profile
 
-Revision ID: f78c289732bf
+Revision ID: c485ee4d4c29
 Revises: 13957eaa08dc
-Create Date: 2024-07-19 12:48:49.096386
+Create Date: 2024-07-19 16:12:21.457309
 
 """
 from typing import Sequence, Union
@@ -13,7 +13,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision: str = 'f78c289732bf'
+revision: str = 'c485ee4d4c29'
 down_revision: Union[str, None] = '13957eaa08dc'
 branch_labels: Union[str, Sequence[str], None] = None
 depends_on: Union[str, Sequence[str], None] = None
